@@ -1,6 +1,6 @@
 body {
     background-image: url('stitch1.jpg');
-    background-size: 100vw 100vh;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -17,11 +17,11 @@ body {
 }
 
 #mensaje {
-    font-size: 36px;
+    font-size: 4vw; /* Utiliza vw en lugar de px */
     font-weight: bold;
     color: #0e0e0e;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(48, 6, 131, 0.2); /* Sombra de texto */
+    margin-bottom: 2vh; /* Utiliza vh en lugar de px */
+    text-shadow: 2px 2px 4px rgba(48, 6, 131, 0.2);
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 10px;
     border: 2px solid #fff;
@@ -29,19 +29,18 @@ body {
 
 .burbuja {
     position: absolute;
-    font-size: 18px;
+    font-size: 2.5vw; /* Utiliza vw en lugar de px */
     font-weight: bold;
     color: #020202;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     animation: burbuja 3s ease-in-out;
-    border: 2px solid #fff; /* Borde blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.319); /* Sombra de caja */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 1vw; /* Utiliza vw en lugar de px */
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.319);
 }
-
 @keyframes burbuja {
     0% {
         transform: scale(0.5);
@@ -54,5 +53,22 @@ body {
     100% {
         transform: scale(0.5);
         opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    #mensaje {
+        font-size: 6vw;
+    }
+    .burbuja {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #mensaje {
+        font-size: 8vw;
+    }
+    .burbuja {
+        font-size: 4.5vw;
     }
 }
