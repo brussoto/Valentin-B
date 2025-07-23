@@ -12,9 +12,11 @@ body {
     position: relative;
     width: 80%;
     min-height: 80vh;
-    border: 2px solid white;
-    border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #mensaje {
@@ -33,7 +35,7 @@ body {
 
 .burbuja {
     position: absolute;
-    font-size: 1rem;
+    font-size: 0.5rem;
     font-weight: bold;
     color: #020202;
     opacity: 0;
@@ -41,7 +43,7 @@ body {
     animation: burbuja 3s ease-in-out;
     border: 2px solid #fff;
     border-radius: 10px;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.319);
 }
