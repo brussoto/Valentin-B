@@ -12,13 +12,9 @@ body {
     position: relative;
     width: 80%;
     min-height: 80vh;
+    border: 2px solid white;
+    border-radius: 10px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-    box-sizing: border-box;
 }
 
 #mensaje {
